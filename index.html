@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB SPA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MovieDB</div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#search" class="nav-link">Search</a></li>
+                <li><a href="#top-movies" class="nav-link">Top Movies</a></li>
+                <li><a href="#top-shows" class="nav-link">Top TV Shows</a></li>
+                <li id="auth-section">
+                    <a href="#login" class="nav-link" id="login-btn">Login</a>
+                    <div id="user-profile" class="hidden"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar left-sidebar">&nbsp;</div>
+
+    <main id="app-container">
+        <section id="home-view" class="view active">
+            <h1>Welcome to MovieDB</h1>
+            <div class="hero-section">
+                <div class="search-box">
+                    <input type="text" placeholder="Search movies, TV shows, actors...">
+                    <button id="quick-search">Search</button>
+                </div>
+            </div>
+            <div class="trending-container">
+                <!-- Trending content will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <div class="sidebar right-sidebar">&nbsp;</div>
+
+    <footer>
+        <p>© 2025 MovieDB SPA | Using TMDb API</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
